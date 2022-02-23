@@ -1,4 +1,7 @@
-document.getElementById('main-form').addEventListener('submit', checkForm);// находим необходимый объект через id main-form и вешаем на него обработчик событий, и добавляем события напримен submit и вызываем необходимую форму 
+document.getElementById('main-form').addEventListener('submit', checkForm);// находим необходимый 
+// объект через id main-form 
+// и вешаем на него обработчик событий,
+//  и добавляем события напримен submit и вызываем необходимую форму 
 
 function checkForm(event){ //создаем функцию с переменной event так как обрабатываем событие
     event.preventDefault(); // отключает стандартное поведение отменяет перезагрузку страницы при нажатии на кнопку
@@ -37,3 +40,44 @@ function checkForm(event){ //создаем функцию с переменно
     }
   
 }
+// INTERVALS
+// let inter = setInterval(myFunc, 1000);
+//  let counter = 0;
+//  function myFunc(){
+//      counter++;
+//      console.log('Counter: '+ counter);
+//     if(counter == 3){
+//         clearInterval(inter);
+//     }
+//  }
+
+
+// setInterval(function(){
+//     counter++;
+//     console.log('Counter: '+ counter);
+// }, 1000);
+
+// TIMERS
+// setTimeout(function(){
+//     console.log('Timer is working');
+// }, 2000);
+
+// let date = new Date();
+// console.log(date.getFullYear());
+// console.log(date.getMonth()+1);
+ 
+class Person{
+    constructor(name, age, happiness){
+        this.name = name;
+        this.age = age;
+        this.happiness = happiness;
+    }
+    info(){
+        console.log("Man: "+this.name+ " Age: "+this.age);
+    
+    }
+}
+ 
+let alex = new Person('Alex', 45, true);
+console.log(alex.name);
+alex.info();
