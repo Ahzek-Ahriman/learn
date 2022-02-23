@@ -7,8 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <button name = "mainButton", onclick="onClickButton(this)">Press me</button>
-    
+
+   <!-- <p id = "text">Text</p>
+
+   <span class = 'simple-text'> Text1 </span>
+   <span class = 'simple-text'> Text2 </span>
+   <span class = 'simple-text'> Text3 </span> -->
+
+   <form id = 'main-form' method="post"> 
+       <label for = 'name'>Name: </label>
+       <input type="text", name = 'name' placeholder="Name", id = "name"><br><br>
+       <label for = 'password'>Password: </label>
+       <input type="password", name = 'pass' placeholder="Password", id = "pass"><br><br>
+       <label for = 'repass'>Check Password: </label>
+       <input type="password", name = 'repass' placeholder="Check Password", id = "repass"><br><br>
+        <span>Sex:</span>
+        <input type = 'radio' name = 'state' id = 'male' value="Male">
+        <label for="male">Male</label>
+        <input type = 'radio' name = 'state' id = 'female' value="Female">
+        <label for="female">Female</label><br><br>
+        <div id = "error" style = "color: red;"></div>
+        <input type="submit" name = 'submit' value="Submit">
+
+   </form>
+
     <script src = "script.js"> 
     </script>
 </body>
